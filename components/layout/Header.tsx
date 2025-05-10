@@ -22,7 +22,7 @@ export default function Header() {
 
   return (
     <header className="fixed w-full bg-white shadow-md z-50">
-      <div className="container mx-auto px-4 py-4 flex justify-between items-center">
+      <div className="w-full max-w-[1280px] mx-auto px-4 py-4 flex justify-between items-center">
         {/* Logo */}
         <Link
           href="/"
@@ -62,7 +62,7 @@ export default function Header() {
 
         {/* Mobile Menu Overlay */}
         {isMenuOpen && (
-          <div className="fixed inset-0 bg-white z-50 md:hidden">
+          <div className="fixed inset-0 left-0 top-0 bg-white z-50 md:hidden w-screen overflow-x-hidden">
             {/* Mobile Menu Header */}
             <div className="flex justify-between items-center p-4">
               <Link href="/" className="flex items-center">
