@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const Mission = () => {
   return (
@@ -6,9 +6,7 @@ const Mission = () => {
       <div className="mx-auto px-6 max-w-md md:max-w-4xl">
         {/* Logo and Title */}
         <div className="mb-10">
-          <h2 className="text-3xl md:text-4xl font-bold text-amber-400 mb-1">
-            ARMLC
-          </h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-amber-400 mb-1">ARMLC</h2>
           <p className="text-base md:text-xl text-black">
             Association du Risk Management des Lieux de Culte
           </p>
@@ -19,23 +17,15 @@ const Mission = () => {
           {/* Top Values */}
           <div className="flex justify-between mb-6 md:mb-8 text-black">
             <div className="w-1/2 px-2">
-              <h3 className="font-bold text-sm md:text-xl mb-1">
-                Solidarité
-              </h3>
+              <h3 className="font-bold text-sm md:text-xl mb-1">Solidarité</h3>
               <p className="text-sm md:text-base">
-                Se protéger, c&apos;est aussi
-                protéger les autres
+                Se protéger, c&apos;est aussi protéger les autres
               </p>
             </div>
 
             <div className="w-1/2 px-2">
-              <h3 className="font-bold text-sm md:text-xl mb-1">
-                Indépendance
-              </h3>
-              <p className="text-sm md:text-base ">
-                Aucune influence
-                commerciale
-              </p>
+              <h3 className="font-bold text-sm md:text-xl mb-1">Indépendance</h3>
+              <p className="text-sm md:text-base ">Aucune influence commerciale</p>
             </div>
           </div>
 
@@ -54,36 +44,19 @@ const Mission = () => {
           {/* Bottom Values */}
           <div className="grid grid-cols-3 md:gap-7 justify-between mt-4 md:mt-6">
             <div className="px-1">
-              <h3 className="font-bold text-sm md:text-xl mb-1">
-                Prévention
-              </h3>
-              <p className="text-sm md:text-sm">
-                Anticiper les
-                risques pour
-                mieux les éviter
-              </p>
+              <h3 className="font-bold text-sm md:text-xl mb-1">Prévention</h3>
+              <p className="text-sm md:text-sm">Anticiper les risques pour mieux les éviter</p>
             </div>
 
             <div className="px-1">
-              <h3 className="font-bold text-sm md:text-xl mb-1">
-                Transparence
-              </h3>
-              <p className="text-sm md:text-sm">
-                Des actions claires
-                pour des objectifs
-                partagés
-              </p>
+              <h3 className="font-bold text-sm md:text-xl mb-1">Transparence</h3>
+              <p className="text-sm md:text-sm">Des actions claires pour des objectifs partagés</p>
             </div>
 
             <div className="px-1">
-              <h3 className="font-bold text-sm md:text-xl mb-1">
-                Responsabilité
-              </h3>
+              <h3 className="font-bold text-sm md:text-xl mb-1">Responsabilité</h3>
               <p className="text-sm md:text-sm ">
-                Promouvoir une
-                culture du risque
-                au service du bien
-                commun
+                Promouvoir une culture du risque au service du bien commun
               </p>
             </div>
           </div>

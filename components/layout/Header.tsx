@@ -1,9 +1,9 @@
-"use client";
+'use client';
 
-import Image from "next/image";
-import React, { useState } from "react";
-import Link from "next/link";
-import { FaBars, FaTimes } from "react-icons/fa";
+import Image from 'next/image';
+import React, { useState } from 'react';
+import Link from 'next/link';
+import { FaBars, FaTimes } from 'react-icons/fa';
 // import Button from '../ui/Button';
 
 export default function Header() {
@@ -14,20 +14,17 @@ export default function Header() {
   };
 
   const menuLinks = [
-    { label: "Nos Engagements" },
-    { label: "Pourquoi se protéger ?" },
+    { label: 'Nos Engagements' },
+    { label: 'Pourquoi se protéger ?' },
     { label: "Bénéfices de l'adhésion" },
-    { label: "Rester informer" },
+    { label: 'Rester informer' },
   ];
 
   return (
     <header className="fixed w-full bg-white shadow-md z-50">
       <div className="w-full max-w-[1280px] mx-auto px-4 py-4 flex justify-between items-center">
         {/* Logo */}
-        <Link
-          href="/"
-          className="text-2xl font-bold text-gray-900 flex items-center"
-        >
+        <Link href="/" className="text-2xl font-bold text-gray-900 flex items-center">
           {/* Desktop Logo */}
           <Image
             src="/icones/logoDesktop.svg"
@@ -74,13 +71,9 @@ export default function Header() {
                   className="object-contain"
                 />
               </Link>
-              
+
               {/* Close Button */}
-              <button
-                onClick={toggleMenu}
-                aria-label="Close menu"
-                className="text-black"
-              >
+              <button onClick={toggleMenu} aria-label="Close menu" className="text-black">
                 <FaTimes size={24} />
               </button>
             </div>
@@ -88,15 +81,11 @@ export default function Header() {
             {/* Mobile Menu Links */}
             <ul className="flex flex-col items-center">
               {menuLinks.map((link, index) => (
-                <li 
-                  key={index} 
+                <li
+                  key={index}
                   className="w-full border-b border-amber-400 py-4 hover:bg-[#fbf7ce] transition cursor-pointer"
                 >
-                  <p
-                    className="text-black pl-5 text-xl font-semibold"
-                  >
-                    {link.label}
-                  </p>
+                  <p className="text-black pl-5 text-xl font-semibold">{link.label}</p>
                 </li>
               ))}
             </ul>
@@ -104,11 +93,7 @@ export default function Header() {
         )}
 
         {/* Mobile Menu Toggle */}
-        <button
-          className="md:hidden text-gray-900"
-          onClick={toggleMenu}
-          aria-label="Open menu"
-        >
+        <button className="md:hidden text-gray-900" onClick={toggleMenu} aria-label="Open menu">
           <FaBars size={24} />
         </button>
       </div>

@@ -77,7 +77,10 @@ const NewsletterForm: React.FC = () => {
   }
 
   return (
-    <section id="newsletter" className="rounded-lg bg-[#fbf7ce] mx-4 md:mx-10 my-8  md:py-b-20 lg:py-b-24">
+    <section
+      id="newsletter"
+      className="rounded-lg bg-[#fbf7ce] mx-4 md:mx-10 my-8  md:py-b-20 lg:py-b-24"
+    >
       <div className="rounded-t-lg bg-[#ecac2b]">
         <h2 className="text-lg md:text-2xl px-2 py-4 font-bold text-center text-gray-900 mb-4">
           Restez informé, même sans adhérer

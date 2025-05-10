@@ -1,23 +1,23 @@
-import React from "react";
-import Image from "next/image";
+import React from 'react';
+import Image from 'next/image';
 
 const Security = () => {
   const securityPoints = [
     {
-      icon: "/icones/icone-identifier.svg",
-      title: "Identifier les Risques",
+      icon: '/icones/icone-identifier.svg',
+      title: 'Identifier les Risques',
     },
     {
-      icon: "/icones/icone-be╠üne╠üvole.svg",
-      title: "Former les bénévoles",
+      icon: '/icones/icone-be╠üne╠üvole.svg',
+      title: 'Former les bénévoles',
     },
     {
-      icon: "/icones/icone-pre╠üvention.svg",
-      title: "Agir en prévention",
+      icon: '/icones/icone-pre╠üvention.svg',
+      title: 'Agir en prévention',
     },
     {
-      icon: "/icones/icone-incident.svg",
-      title: "Réagir efficacement",
+      icon: '/icones/icone-incident.svg',
+      title: 'Réagir efficacement',
     },
   ];
 
@@ -29,13 +29,12 @@ const Security = () => {
             Pourquoi parler de sécurité dans les <br className="hidden md:block" /> lieux de culte ?
           </h2>
           <p className="text-black max-w-2xl mx-auto md:mx-0 mb-5">
-            Les lieux de culte musulmans, essentiels à la vie spirituelle, sont
-            sonvent ouverts et donc exposés à divers risques tels que les
-            incendies, le vandalisme ou les accidents.
+            Les lieux de culte musulmans, essentiels à la vie spirituelle, sont sonvent ouverts et
+            donc exposés à divers risques tels que les incendies, le vandalisme ou les accidents.
           </p>
           <p className="text-black max-w-2xl mx-auto md:mx-0">
-            Le Risk Management permet d&apos;anticiper, de se préparer, et de
-            protéger ces lieux précieux.
+            Le Risk Management permet d&apos;anticiper, de se préparer, et de protéger ces lieux
+            précieux.
           </p>
         </div>
 
@@ -60,9 +59,7 @@ const Security = () => {
                 />
               </div>
               <div className="text-left">
-                <h3 className="text-lg font-semibold text-gray-900">
-                  {point.title}
-                </h3>
+                <h3 className="text-lg font-semibold text-gray-900">{point.title}</h3>
               </div>
             </div>
           ))}

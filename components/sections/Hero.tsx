@@ -12,16 +12,18 @@ const Hero = () => {
               Ensemble, protégeons nos lieux de culte
             </h1>
             <p className="text-gray-700 mb-6 text-base md:text-lg text-center md:text-left">
-                Notre mission est d&apos;accompagner les lieux de culte musulmans en Frande dans une démarche proactive de gestion des risques (risk management), afin de garantir la sécurité des fidèles, la protection des biens et la continuité des activités culturelles.
+              Notre mission est d&apos;accompagner les lieux de culte musulmans en Frande dans une
+              démarche proactive de gestion des risques (risk management), afin de garantir la
+              sécurité des fidèles, la protection des biens et la continuité des activités
+              culturelles.
             </p>
-           
           </div>
-          
+
           {/* Image illustrative */}
           <div className="md:w-1/2 relative">
             <div className="aspect-w-16 aspect-h-9">
-              <Image 
-                src="/mosque-illustration.svg" 
+              <Image
+                src="/mosque-illustration.svg"
                 alt="Illustration de mosquée"
                 layout="fill"
                 objectFit="contain"

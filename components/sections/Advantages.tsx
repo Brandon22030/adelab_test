@@ -1,27 +1,27 @@
-import React from "react";
-import Image from "next/image";
+import React from 'react';
+import Image from 'next/image';
 
 const Advantages = () => {
   const advantagesPoints = [
     {
-      icon: "/icones/icone-assurance.svg",
-      title: "Assurance multirisque collective",
-      description: "Spécialement conçue pour les lieux de cultes musulmans",
+      icon: '/icones/icone-assurance.svg',
+      title: 'Assurance multirisque collective',
+      description: 'Spécialement conçue pour les lieux de cultes musulmans',
     },
     {
-      icon: "/icones/icone-ressources.svg",
-      title: "Accès à des ressources pratiques",
-      description: "Guides, vidéos, modèles utiles au quotidien",
+      icon: '/icones/icone-ressources.svg',
+      title: 'Accès à des ressources pratiques',
+      description: 'Guides, vidéos, modèles utiles au quotidien',
     },
     {
-      icon: "/icones/icone-re╠üseau.svg",
+      icon: '/icones/icone-re╠üseau.svg',
       title: "Réseau d'entraide entre responsables",
-      description: "Echangez entre pairs, partagez vos expériences.",
+      description: 'Echangez entre pairs, partagez vos expériences.',
     },
     {
-      icon: "/icones/icone-accompagnement.svg",
-      title: "Accompagnement personnalisé",
-      description: "Sécurité, obligations légales, conseils sur mesure",
+      icon: '/icones/icone-accompagnement.svg',
+      title: 'Accompagnement personnalisé',
+      description: 'Sécurité, obligations légales, conseils sur mesure',
     },
   ];
 
@@ -33,8 +33,8 @@ const Advantages = () => {
             Les avantages à rejoindre l&apos;ARMLC
           </h2>
           <p className="text-black max-w-2xl mx-auto md:font-semibold">
-            Rejoindre l&apos;ARMLC, c&apos;est bénéficier d&apos;une couverture
-            adaptée, de conseils pratiques et d&apos;un réseau engagé.
+            Rejoindre l&apos;ARMLC, c&apos;est bénéficier d&apos;une couverture adaptée, de conseils
+            pratiques et d&apos;un réseau engagé.
           </p>
         </div>
 
@@ -59,9 +59,7 @@ const Advantages = () => {
                 />
               </div>
               <div className="flex-grow">
-                <h3 className="text-md md:text-lg font-semibold text-gray-900">
-                  {point.title}
-                </h3>
+                <h3 className="text-md md:text-lg font-semibold text-gray-900">{point.title}</h3>
                 <p className="text-gray-700">{point.description}</p>
               </div>
             </div>

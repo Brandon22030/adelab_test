@@ -16,7 +16,6 @@ export default function Home() {
       <Advantages />
       <NewsletterForm />
       <Footer />
-
     </main>
   );
 }
