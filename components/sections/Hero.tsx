@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <section className="relative pt-16 pb-12 md:py-20 lg:py-24">
       <div className="mx-auto px-4">
-        <div className="flex flex-col md:flex-row items-center">
+        <div className="flex flex-col md:flex-row justify-center items-center">
           {/* Texte et CTA */}
           <div className="md:w-1/2 mb-8 md:mb-0 md:pr-8">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-7 text-center md:text-left">
