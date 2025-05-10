@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" fill="none">
+  <circle cx="250" cy="250" r="200" fill="#ecac2b" opacity="0.2"/>
+  <path d="M150 200h200v100H150z" fill="#ecac2b"/>
+  <text x="250" y="280" text-anchor="middle" font-size="120" fill="#333">
+    404
+  </text>
+  <path d="M100 350 L400 150" stroke="#333" stroke-width="10"/>
+</svg>

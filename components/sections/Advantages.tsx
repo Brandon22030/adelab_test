@@ -34,7 +34,7 @@ const Advantages = () => {
           </h2>
           <p className="text-black max-w-2xl mx-auto md:font-semibold">
             Rejoindre l&apos;ARMLC, c&apos;est bénéficier d&apos;une couverture
-            adaptée, de conseils pratiques et d'un réseau engagé.
+            adaptée, de conseils pratiques et d&apos;un réseau engagé.
           </p>
         </div>
 
