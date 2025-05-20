@@ -29,7 +29,7 @@ export default function Header() {
           <Image
             src="/icones/logoDesktop.svg"
             alt="Logo ARMLC"
-            width={200}
+            width={100}
             height={60}
             priority
             className="hidden md:block object-contain transition-transform duration-500 ease-in-out hover:scale-105"

@@ -9,13 +9,15 @@ import NewsletterForm from '@/components/sections/NewsletterForm';
 export default function Home() {
   return (
     <main className="bg-white">
-      <Header />
-      <Hero />
-      <Mission />
-      <Security />
-      <Advantages />
-      <NewsletterForm />
-      <Footer />
+        <Header />
+      {/* <div className="px-4 md:px-6 lg:px-8 xl:px-12 2xl:mx-auto 2xl:max-w-7xl"> */}
+        <Hero />
+        <Mission />
+        <Security />
+        <Advantages />
+        <NewsletterForm />
+      {/* </div> */}
+        <Footer />
     </main>
   );
 }

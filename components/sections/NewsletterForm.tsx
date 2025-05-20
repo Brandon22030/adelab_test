@@ -6,6 +6,7 @@ interface FormData {
   firstName: string;
   lastName: string;
   email: string;
+  consent: boolean;
 }
 
 const NewsletterForm: React.FC = () => {
@@ -13,13 +14,21 @@ const NewsletterForm: React.FC = () => {
     firstName: '',
     lastName: '',
     email: '',
+    consent: false,
   });
 
-  const [errors, setErrors] = useState<Partial<FormData>>({});
+  type FormErrors = {
+    firstName?: string;
+    lastName?: string;
+    email?: string;
+    consent?: string;
+  };
+
+  const [errors, setErrors] = useState<FormErrors>({});
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   const validateForm = (): boolean => {
-    const newErrors: Partial<FormData> = {};
+    const newErrors: FormErrors = {};
 
     if (!formData.firstName.trim()) {
       newErrors.firstName = 'Le prénom est requis';
@@ -34,6 +43,10 @@ const NewsletterForm: React.FC = () => {
       newErrors.email = "L'email est requis";
     } else if (!emailRegex.test(formData.email)) {
       newErrors.email = 'Veuillez entrer un email valide';
+    }
+
+    if (!formData.consent) {
+      newErrors.consent = 'Vous devez accepter de recevoir nos communications';
     }
 
     setErrors(newErrors);
@@ -52,10 +65,10 @@ const NewsletterForm: React.FC = () => {
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const { name, value } = e.target;
+    const { name, value, type, checked } = e.target;
     setFormData((prev) => ({
       ...prev,
-      [name]: value,
+      [name]: type === 'checkbox' ? checked : value,
     }));
 
     // Effacer l&apos;erreur lorsque l&apos;utilisateur commence à saisir
@@ -77,26 +90,27 @@ const NewsletterForm: React.FC = () => {
   }
 
   return (
-    <section
-      id="newsletter"
-      className="rounded-lg bg-[#fbf7ce] mx-4 md:mx-10 my-8  md:py-b-20 lg:py-b-24"
-    >
-      <div className="rounded-t-lg bg-[#ecac2b]">
-        <h2 className="text-lg md:text-2xl px-2 py-4 font-bold text-center text-gray-900 mb-4">
+    <div className="w-full px-4 md:px-6 lg:px-8 xl:px-12 2xl:mx-auto 2xl:max-w-7xl mb-16">
+      <section
+        id="newsletter"
+        className="rounded-lg bg-[#fbf7ce] w-full max-w-[1800px] mx-auto overflow-hidden"
+      >
+      <div className="rounded-t-lg bg-[#ecac2b] w-full">
+        <h2 className="text-lg md:text-md font-black px-2 py-4 text-center text-gray-900">
           Restez informé, même sans adhérer
         </h2>
       </div>
-      <div className="mx-auto px-4 md:mx-40 md:my-20">
-        <div className="md:grid md:grid-cols-2 gap-15 md:items-center ">
-          <div className="text-center md:text-left mb-5 md:mb-0">
-            <p className="text-black">
+      <div className="w-full py-8 md:py-15">
+        <div className="flex flex-col md:flex-row justify-between items-center max-w-5xl mx-auto gap-8">
+          <div className="w-full md:w-[45%] text-center md:text-left">
+            <p className="text-black text-sm md:text-lg">
               Chaque mois, recevez des conseils concrets pour renforcer la sécurité de vos lieux de
               culte musulmans, rester informé des obligations et réglémentations en vigueur, et
               découvrir les actions menées par l&apos;ARMLC.
             </p>
           </div>
 
-          <form onSubmit={handleSubmit} className="space-y-4">
+          <form onSubmit={handleSubmit} className="space-y-4 w-full max-w-[400px] mx-auto">
             <div>
               <input
                 type="text"
@@ -136,10 +150,30 @@ const NewsletterForm: React.FC = () => {
               {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email}</p>}
             </div>
 
+            <div className="flex items-start">
+              <div className="flex items-center h-5">
+                <input
+                  id="consent"
+                  name="consent"
+                  type="checkbox"
+                  required
+                  checked={formData.consent}
+                  onChange={handleChange}
+                  className="h-4 w-4 text-amber-500 focus:ring-amber-400 border-gray-300 rounded"
+                />
+              </div>
+              <div className="ml-3 text-sm">
+                <label htmlFor="consent" className="text-gray-700">
+                  Je consens à recevoir des communications par e-mail de l&apos;ARMLC.
+                </label>
+              </div>
+              {errors.consent && <p className="text-red-500 text-sm mt-1">{errors.consent}</p>}
+            </div>
+
             <div className="text-center">
               <button
                 type="submit"
-                className="text-white rounded-lg w-full px-8 py-2 text-lg bg-[#ecac2b] mb-15 hover:bg-amber-200 hover:text-black cursor-pointer transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-amber-300"
+                className="text-white rounded-lg w-full px-8 py-2 text-lg bg-[#ecac2b] hover:bg-amber-200 hover:text-black cursor-pointer transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-amber-300"
               >
                 S&apos;abonner
               </button>
@@ -147,7 +181,8 @@ const NewsletterForm: React.FC = () => {
           </form>
         </div>
       </div>
-    </section>
+      </section>
+    </div>
   );
 };
 
