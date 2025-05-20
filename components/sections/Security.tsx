@@ -23,16 +23,16 @@ const Security = () => {
 
   return (
     <section id="security" className="bg-[#fdfdf8] py-5 md:py-20 lg:py-10 w-full">
-      <h2 className="text-center text-lg md:text-2xl font-bold text-gray-900 px-15 md:px-6 lg:px-8 xl:px-12 2xl:mx-auto 2xl:max-w-7xl mb-5">
+      <h2 className="text-center md:text-justify text-lg md:text-2xl font-bold text-gray-900 px-15 md:px-6 lg:px-8 xl:px-12 2xl:mx-auto 2xl:max-w-7xl mb-5">
         Pourquoi parler de sécurité dans les <br className="hidden md:block" /> lieux de culte ?
       </h2>
-      <div className="w-full md:flex md:justify-between gap-6 md:gap-12 px-4 mx-auto max-w-7xl">
-        <div className="text-center md:text-left mb-8 md:mb-12 md:my-auto">
+      <div className="w-full md:flex md:space-x-30 gap-6 md:gap-12 px-4 mx-auto max-w-7xl">
+        <div className="text-center md:text-left mb-8  md:my-auto">
           <p className="text-black max-w-2xl mx-auto md:mx-0 mb-6">
-            Les lieux de culte musulmans, essentiels à la vie spirituelle, sont souvent ouverts et donc exposés à divers risques tels que les incendies, le vandalisme ou les accidents.
+            Les lieux de culte musulmans, essentiels à la vie spirituelle, sont souvent <br className="hidden md:block" />ouverts et donc exposés à divers risques tels que les incendies, le <br className="hidden md:block" />vandalisme ou les accidents.
           </p>
           <p className="text-black max-w-2xl mx-auto md:mx-0">
-            Le Risk Management permet d&apos;anticiper, de se préparer, et de protéger ces lieux précieux.
+            Le Risk Management permet d&apos;anticiper, de se préparer, et de protéger <br className="hidden md:block" />ces lieux précieux.
           </p>
         </div>
 

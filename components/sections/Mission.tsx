@@ -15,29 +15,30 @@ const Mission = () => {
         {/* Values with Wavy Line */}
         <div className="relative">
           {/* Top Values */}
-          <div className="flex justify-between gap-8 mb-8 md:mb-12 text-black">
+          <div className="flex ml-10 md:ml-[10rem] md:space-x-60 gap-8 mb-8 md:mb-12 text-black">
             <div className="px-2 text-center">
-              <h3 className="font-black text-sm md:text-xl mb-2 text-black">Solidarité</h3>
-              <p className="text-sm md:text-lg">
-                Se protéger, c&apos;est aussi protéger les autres
+              <h3 className="font-black text-xs md:text-lg mb-2 text-black">Solidarité</h3>
+              <p className="text-xs md:text-lg">
+                Se protéger, c&apos;est aussi <br/> protéger les autres
               </p>
             </div>
 
             <div className="px-2 text-center">
-              <h3 className="font-black text-sm md:text-xl mb-2 text-black">Indépendance</h3>
-              <p className="text-sm md:text-lg">Aucune influence commerciale</p>
+              <h3 className="font-black text-xs md:text-lg mb-2 text-black">Indépendance</h3>
+              <p className="text-xs md:text-lg">Aucune influence <br /> commerciale</p>
             </div>
           </div>
 
           {/* Middle Section - Wave Image */}
-          <div className="flex-1 flex items-center justify-center my-4">
-            <div className="w-full max-w-2xl mx-auto">
+          <div className="flex-1 flex items-center justify-center -my-5 md:-my-10">
+            <div className="w-full max-w-4xl mx-auto">
               <Image
                 src="/icones/icon-waves.svg"
                 alt="Vague décorative"
-                width={500}
-                height={50}
-                className="hidden md:block w-full h-auto"
+                width={1000}
+                height={100}
+                className="hidden md:block w-full h-auto scale-125"
+                priority
               />
               <Image
                 src="/icones/icon-waves.svg"
@@ -52,18 +53,18 @@ const Mission = () => {
           {/* Bottom Values */}
           <div className="flex gap-6 md:gap-8 text-black mt-8 md:mt-12">
             <div className="px-2 text-center">
-              <h3 className="font-black text-sm md:text-xl mb-2 text-black">Prévention</h3>
-              <p className="text-sm md:text-lg">Anticiper les risques pour mieux les éviter</p>
+              <h3 className="font-black text-xs md:text-lg mb-2 text-black">Prévention</h3>
+              <p className="text-xs md:text-lg">Anticiper les risques pour mieux les éviter</p>
             </div>
 
-            <div className="px-2 text-center">
-              <h3 className="font-black text-sm md:text-xl mb-2 text-black">Formation</h3>
-              <p className="text-sm md:text-lg">Savoir réagir face aux dangers</p>
+            <div className="px-2 text-center md:ml-40">
+              <h3 className="font-black text-xs md:text-lg mb-2 text-black">Transparence</h3>
+              <p className="text-xs md:text-lg">Des actions claires pour des objectifs partagés</p>
             </div>
 
-            <div className="px-2 text-center">
-              <h3 className="font-black text-sm md:text-xl mb-2 text-black">Sécurité</h3>
-              <p className="text-sm md:text-lg">Protéger les personnes et les biens</p>
+            <div className="px-2 text-center md:ml-40">
+              <h3 className="font-black text-xs md:text-lg mb-2 text-black">Responsabilité</h3>
+              <p className="text-xs md:text-lg">Promouvoir la gestion du risque au service du bien commun</p>
             </div>
           </div>
         </div>
