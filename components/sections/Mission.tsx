@@ -3,7 +3,7 @@ import React from 'react';
 
 const Mission = () => {
   return (
-    <section className="pt-12 md:py-16 lg:py-20 w-full pb-5">
+    <section className="pt-12 md:py-15 w-full pb-5">
       <div className="w-full max-w-5xl mx-auto px-4 sm:px-6">
         {/* Logo and Title */}
         <div className="mb-12 md:mb-16">

@@ -26,7 +26,7 @@ const Advantages = () => {
   ];
 
   return (
-    <section id="security" className="bg-white py-10 md:py-20 lg:py-15 w-full px-4 md:px-6 lg:px-8 xl:px-12 2xl:mx-auto 2xl:max-w-7xl">
+    <section id="security" className="bg-white py-10 md:py-20 lg:py-10 w-full px-4 md:px-6 lg:px-8 xl:px-12 2xl:mx-auto 2xl:max-w-7xl">
       <div className="w-full">
         <div className="text-center mb-8 md:mb-12">
           <h2 className="text-lg md:text-2xl font-bold text-black mb-4">
