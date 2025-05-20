@@ -23,7 +23,7 @@ const Security = () => {
 
   return (
     <section id="security" className="bg-[#fbf7ce] py-5 md:py-20 lg:py-10 w-full">
-      <h2 className="text-center md:text-justify text-lg md:text-2xl font-bold text-gray-900 px-15 md:px-6 lg:px-8 xl:px-12 2xl:mx-auto 2xl:max-w-7xl mb-5">
+      <h2 className="text-center md:text-justify text-lg md:text-3xl md:font-black font-bold text-gray-900 px-15 md:px-6 lg:px-8 xl:px-12 2xl:mx-auto 2xl:max-w-7xl mb-5">
         Pourquoi parler de sécurité dans les <br className="hidden md:block" /> lieux de culte ?
       </h2>
       <div className="w-full md:flex md:space-x-30 gap-6 md:gap-12 px-4 mx-auto max-w-7xl">

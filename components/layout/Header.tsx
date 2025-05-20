@@ -79,13 +79,15 @@ export default function Header() {
             </div>
             
             {/* Mobile Menu Links */}
-            <ul className="flex flex-col items-center">
+            <ul className="flex flex-col items-center w-full">
               {menuLinks.map((link, index) => (
                 <li
                   key={index}
-                  className="w-full border-b border-amber-400 py-4 hover:bg-[#fbf7ce] transition cursor-pointer"
+                  className="w-full border-b border-amber-400 py-4 active:bg-[#fbf7ce] hover:bg-[#fbf7ce] transition-colors duration-200 cursor-pointer"
                 >
-                  <p className="text-black pl-5 text-xl font-semibold">{link.label}</p>
+                  <div className="w-full h-full">
+                    <p className="text-black pl-5 text-xl font-semibold">{link.label}</p>
+                  </div>
                 </li>
               ))}
             </ul>

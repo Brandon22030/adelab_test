@@ -7,7 +7,7 @@ const Mission = () => {
       <div className="w-full max-w-5xl mx-auto px-4 sm:px-6">
         {/* Logo and Title */}
         <div className="mb-12 md:mb-16">
-          <p className="text-lg md:text-2xl lg:text-4xl font-bold text-gray-900 text-center px-5">
+          <p className="text-lg md:text-3xl md:font-black font-bold text-gray-900 text-center px-5">
             Association du Risk Management des Lieux de Culte
           </p>
         </div>
