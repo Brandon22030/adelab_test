@@ -1,63 +1,69 @@
+import Image from 'next/image';
 import React from 'react';
 
 const Mission = () => {
   return (
-    <section className="py-8 md:py-16 text-center w-full">
-      <div className="w-full max-w-4xl mx-auto">
+    <section className="pt-12 md:py-16 lg:py-20 w-full pb-5">
+      <div className="w-full max-w-5xl mx-auto px-4 sm:px-6">
         {/* Logo and Title */}
-        <div className="mb-10">
-          {/* <h2 className="text-3xl md:text-4xl font-bold text-amber-400 mb-1">ARMLC</h2> */}
-          <p className="text-xl md:text-2xl text-black font-black">
+        <div className="mb-12 md:mb-16">
+          <p className="text-lg md:text-2xl lg:text-4xl font-bold text-gray-900 text-center px-5">
             Association du Risk Management des Lieux de Culte
           </p>
         </div>
 
         {/* Values with Wavy Line */}
-        <div className="relative ">
+        <div className="relative">
           {/* Top Values */}
-          <div className="flex justify-between mb-6 md:mb-8 text-black">
-            <div className="w-1/2 px-2">
-              <h3 className="font-bold text-sm md:text-sm mb-1">Solidarité</h3>
-              <p className="text-sm md:text-sm">
-                Se protéger, c&apos;est aussi <br className="hidden md:block" /> protéger les autres
+          <div className="flex justify-between gap-8 mb-8 md:mb-12 text-black">
+            <div className="px-2 text-center">
+              <h3 className="font-black text-sm md:text-xl mb-2 text-black">Solidarité</h3>
+              <p className="text-sm md:text-lg">
+                Se protéger, c&apos;est aussi protéger les autres
               </p>
             </div>
 
-            <div className="w-1/2 px-2">
-              <h3 className="font-bold text-sm md:text-sm mb-1">Indépendance</h3>
-              <p className="text-sm md:text-sm ">Aucune influence <br className="hidden md:block" /> commerciale</p>
+            <div className="px-2 text-center">
+              <h3 className="font-black text-sm md:text-xl mb-2 text-black">Indépendance</h3>
+              <p className="text-sm md:text-lg">Aucune influence commerciale</p>
             </div>
           </div>
 
-          {/* The SVG Wave */}
-          <div className="mx-auto my-4 md:my-6">
-            <svg viewBox="0 0 500 50" className="w-full h-8 md:h-12">
-              <path
-                d="M0,25 C75,0 175,50 250,25 C325,0 425,50 500,25"
-                fill="none"
-                stroke="#F59E0B"
-                strokeWidth="3"
+          {/* Middle Section - Wave Image */}
+          <div className="flex-1 flex items-center justify-center my-4">
+            <div className="w-full max-w-2xl mx-auto">
+              <Image
+                src="/icones/icon-waves.svg"
+                alt="Vague décorative"
+                width={500}
+                height={50}
+                className="hidden md:block w-full h-auto"
               />
-            </svg>
+              <Image
+                src="/icones/icon-waves.svg"
+                alt="Vague décorative"
+                width={500}
+                height={50}
+                className="block md:hidden w-full h-auto"
+              />
+            </div>
           </div>
 
           {/* Bottom Values */}
-          <div className="grid grid-cols-3 md:gap-7 text-black justify-between mt-4 md:mt-6">
-            <div className="px-1">
-              <h3 className="font-bold text-sm md:text-sm mb-1">Prévention</h3>
-              <p className="text-sm md:text-sm">Anticiper les risques pour <br className="hidden md:block" /> mieux les éviter</p>
+          <div className="flex gap-6 md:gap-8 text-black mt-8 md:mt-12">
+            <div className="px-2 text-center">
+              <h3 className="font-black text-sm md:text-xl mb-2 text-black">Prévention</h3>
+              <p className="text-sm md:text-lg">Anticiper les risques pour mieux les éviter</p>
             </div>
 
-            <div className="px-1">
-              <h3 className="font-bold text-sm md:text-sm mb-1">Transparence</h3>
-              <p className="text-sm md:text-sm">Des actions claires pour <br className="hidden md:block" /> des objectifs partagés</p>
+            <div className="px-2 text-center">
+              <h3 className="font-black text-sm md:text-xl mb-2 text-black">Formation</h3>
+              <p className="text-sm md:text-lg">Savoir réagir face aux dangers</p>
             </div>
 
-            <div className="px-1">
-              <h3 className="font-bold text-sm md:text-sm mb-1">Responsabilité</h3>
-              <p className="text-sm md:text-sm ">
-                Promouvoir une culture du risque <br className="hidden md:block" /> au service du bien commun
-              </p>
+            <div className="px-2 text-center">
+              <h3 className="font-black text-sm md:text-xl mb-2 text-black">Sécurité</h3>
+              <p className="text-sm md:text-lg">Protéger les personnes et les biens</p>
             </div>
           </div>
         </div>

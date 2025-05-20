@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-[#fbf7ce] text-white">
       <div className="container mx-auto">
-        <div className="py-16 border-b border-black mx-5">
+        <div className="py-5 md:py-16 border-b-2 border-black mx-5">
           <div className="md:flex md:space-x-60">
             {/* Logo */}
             <div >
@@ -29,7 +29,7 @@ const Footer: React.FC = () => {
               />
             </div>
 
-            <div className="flex gap-7 md:space-x-60 md:justify-between">
+            <div className="flex gap-7 mt-5 md:mt-0 md:space-x-60 md:justify-between">
               {/* Liens Rapides */}
               <div className="text-black">
                 <h4 className="text-md font-black mb-4">Ressources</h4>

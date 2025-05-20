@@ -3,31 +3,36 @@ import Image from 'next/image';
 
 const Hero = () => {
   return (
-    <section className="relative pt-16 pb-12 md:py-20 lg:py-24 w-full">
-      <div className="w-full">
-        <div className="flex flex-col md:flex-row justify-center items-center">
+    <section className="relative pt-12 md:py-16 lg:py-20 w-full overflow-hidden">
+      <div className="w-full relative z-10 mt-15">
+        <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
           {/* Texte et CTA */}
-          <div className="md:w-1/2 mb-8 md:mb-0 md:pr-8 px-4 md:px-6 lg:px-8 xl:px-12 2xl:mx-auto 2xl:max-w-7xl">
-            <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-7 text-center md:text-left">
-              Ensemble, protégeons <br className="hidden md:block" /> nos lieux de culte
+          <div className="w-full lg:w-1/2 order-2 lg:order-1">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-6 text-center lg:text-left">
+              Ensemble, <br className=" md:hidden block" />protégeons <br/> nos lieux de culte
             </h1>
-            <p className="text-gray-700 mb-6 text-base md:text-lg text-center md:text-left">
-              Notre mission est d&apos;accompagner les lieux de culte musulmans en Frande dans une
+            <p className="text-gray-700 text-base sm:text-lg md:text-xl leading-relaxed text-center lg:text-left mx-6">
+              Notre mission est d&apos;accompagner les lieux de culte musulmans en France dans une
               démarche proactive de gestion des risques (risk management), afin de garantir la
               sécurité des fidèles, la protection des biens et la continuité des activités
               culturelles.
             </p>
           </div>
 
-          {/* Image illustrative */}
-          <div className="md:w-1/2 relative">
-            <div className="aspect-w-16 aspect-h-9">
+          {/* Conteneur de l'image avec cercle de fond */}
+          <div className="w-full lg:w-1/2 relative order-1 lg:order-2">
+            {/* Cercle jaune de fond - Parfaitement rond avec un ratio 1:1 */}
+            <div className="absolute -z-10 w-[200vmin] h-[200vmin] -right-[90vmin] -top-[155vmin] lg:right-[-10vmin] lg:top-1/2 lg:-translate-y-1/2 bg-amber-400 rounded-full opacity-20"></div>
+            
+            {/* Image illustrative */}
+            <div className="relative w-full h-[300px] md:h-[300px] lg:h-[400px] z-10">
               <Image
-                src="/mosque-illustration.svg"
+                src="/icones/icon-mosque.svg"
                 alt="Illustration de mosquée"
-                layout="fill"
-                objectFit="contain"
-                className="rounded-lg"
+                fill
+                className="object-contain"
+                priority
+                sizes="(max-width: 640px) 80vw, (max-width: 1024px) 50vw, 40vw"
               />
             </div>
           </div>

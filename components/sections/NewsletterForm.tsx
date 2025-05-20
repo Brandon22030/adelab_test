@@ -90,17 +90,17 @@ const NewsletterForm: React.FC = () => {
   }
 
   return (
-    <div className="w-full px-4 md:px-6 lg:px-8 xl:px-12 2xl:mx-auto 2xl:max-w-7xl mb-16">
+    <div className="w-full px-4 md:px-6 lg:px-8 xl:px-12 2xl:mx-auto 2xl:max-w-7xl mb-10 md:mb-16">
       <section
         id="newsletter"
         className="rounded-lg bg-[#fbf7ce] w-full max-w-[1800px] mx-auto overflow-hidden"
       >
       <div className="rounded-t-lg bg-[#ecac2b] w-full">
-        <h2 className="text-lg md:text-md font-black px-2 py-4 text-center text-gray-900">
+        <h2 className="text-sm md:text-md font-black px-2 py-4 text-center text-gray-900">
           Restez informé, même sans adhérer
         </h2>
       </div>
-      <div className="w-full py-8 md:py-15">
+      <div className="w-full py-8 px-4 md:py-15">
         <div className="flex flex-col md:flex-row justify-between items-center max-w-5xl mx-auto gap-8">
           <div className="w-full md:w-[45%] text-center md:text-left">
             <p className="text-black text-sm md:text-lg">

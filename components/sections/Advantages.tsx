@@ -26,10 +26,10 @@ const Advantages = () => {
   ];
 
   return (
-    <section id="security" className="bg-white py-16 md:py-20 lg:py-15 w-full">
+    <section id="security" className="bg-white py-10 md:py-20 lg:py-15 w-full px-4 md:px-6 lg:px-8 xl:px-12 2xl:mx-auto 2xl:max-w-7xl">
       <div className="w-full">
-        <div className="text-center mb-12">
-          <h2 className="text-xl md:text-2xl font-black text-black mb-4">
+        <div className="text-center mb-8 md:mb-12">
+          <h2 className="text-lg md:text-2xl font-bold text-black mb-4">
             Les avantages à rejoindre l&apos;ARMLC
           </h2>
           <p className="text-bold max-w-2xl mx-auto md:font-semibold">
@@ -53,14 +53,14 @@ const Advantages = () => {
                 <Image
                   src={point.icon}
                   alt={point.title}
-                  width={20}
-                  height={20}
+                  width={30}
+                  height={30}
                   className="block md:hidden object-contain mx-auto"
                 />
               </div>
               <div className="">
-                <h3 className="text-md font-black text-black">{point.title}</h3>
-                <p className="text-black text-md">{point.description}</p>
+                <h3 className="text-sm md:text-md font-black text-black">{point.title}</h3>
+                <p className="text-black text-sm md:text-md">{point.description}</p>
               </div>
             </div>
           ))}

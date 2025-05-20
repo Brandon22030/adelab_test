@@ -22,12 +22,12 @@ const Security = () => {
   ];
 
   return (
-    <section id="security" className="bg-[#fdfdf8] py-16 md:py-20 lg:py-10 w-full">
-      <h2 className="text-xl md:text-2xl font-black text-gray-900 px-4 md:px-6 lg:px-8 xl:px-12 2xl:mx-auto 2xl:max-w-7xl">
+    <section id="security" className="bg-[#fdfdf8] py-5 md:py-20 lg:py-10 w-full">
+      <h2 className="text-center text-lg md:text-2xl font-bold text-gray-900 px-15 md:px-6 lg:px-8 xl:px-12 2xl:mx-auto 2xl:max-w-7xl mb-5">
         Pourquoi parler de sécurité dans les <br className="hidden md:block" /> lieux de culte ?
       </h2>
       <div className="w-full md:flex md:justify-between gap-10 md:gap-20 px-4 md:px-6 lg:px-8 xl:px-12 2xl:mx-auto 2xl:max-w-7xl">
-        <div className="text-center md:text-left mb-12 md:my-auto">
+        <div className="text-center md:text-left mb-8 md:mb-12 md:my-auto">
           <p className="text-black max-w-2xl mx-auto md:mx-0 mb-[2rem]">
             Les lieux de culte musulmans, essentiels à la vie spirituelle, sont sonvent{' '}
             <br className="hidden md:block" />
