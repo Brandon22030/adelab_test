@@ -7,7 +7,7 @@ const Hero = () => {
       <div className="mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-center items-center">
           {/* Texte et CTA */}
-          <div className="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+          <div className="md:w-1/2 mb-8 md:mb-0 md:pr-8 md:ml-10">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-7 text-center md:text-left">
               Ensemble, protégeons nos lieux de culte
             </h1>
