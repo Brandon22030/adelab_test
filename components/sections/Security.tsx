@@ -22,7 +22,7 @@ const Security = () => {
   ];
 
   return (
-    <section id="security" className="bg-[#fdfdf8] py-5 md:py-20 lg:py-10 w-full">
+    <section id="security" className="bg-[#fbf7ce] py-5 md:py-20 lg:py-10 w-full">
       <h2 className="text-center md:text-justify text-lg md:text-2xl font-bold text-gray-900 px-15 md:px-6 lg:px-8 xl:px-12 2xl:mx-auto 2xl:max-w-7xl mb-5">
         Pourquoi parler de sécurité dans les <br className="hidden md:block" /> lieux de culte ?
       </h2>
@@ -39,7 +39,7 @@ const Security = () => {
         {/* Security Points */}
         <div className="flex flex-col items-center space-y-4 md:mr-0">
           {securityPoints.map((point, index) => (
-            <div key={index} className="flex items-center justify-center md:justify-start gap-4 max-w-md w-full">
+            <div key={index} className="flex items-center ml-[10rem] md:justify-start gap-2 max-w-md w-full">
               <div className="flex-shrink-0">
                 <Image
                   src={point.icon}
@@ -51,8 +51,8 @@ const Security = () => {
                 <Image
                   src={point.icon}
                   alt={point.title}
-                  width={20}
-                  height={20}
+                  width={25}
+                  height={25}
                   className="block md:hidden object-contain"
                 />
               </div>

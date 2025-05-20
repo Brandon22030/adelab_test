@@ -12,9 +12,9 @@ const Hero = () => {
               Ensemble, <br className=" md:hidden block" />protégeons <br/> nos lieux de culte
             </h1>
             <p className="text-gray-700 text-base md:text-lg leading-relaxed text-center lg:text-left mx-6 md:mx-0">
-              Notre mission est d&apos;accompagner les lieux de culte musulmans en France dans une
-              démarche proactive de gestion des risques (risk management), afin de garantir la
-              sécurité des fidèles, la protection des biens et la continuité des activités
+              Notre mission est d&apos;accompagner les lieux de culte <br className="hidden md:block" />musulmans en France dans une
+              démarche proactive de <br className="hidden md:block" />gestion des risques (risk management), afin de garantir <br className="hidden md:block" />la
+              sécurité des fidèles, la protection des biens et la <br className="hidden md:block" />continuité des activités
               culturelles.
             </p>
           </div>
@@ -22,7 +22,7 @@ const Hero = () => {
           {/* Conteneur de l'image avec cercle de fond */}
           <div className="w-full lg:w-1/2 relative order-1 lg:order-2">
             {/* Cercle jaune de fond - Parfaitement rond avec un ratio 1:1 */}
-            <div className="absolute -z-10 w-[200vmin] h-[200vmin] -right-[90vmin] -top-[155vmin] md:-right-[70vmin] md:-top-[30vmin] lg:-translate-y-1/2 bg-amber-400 rounded-full opacity-20"></div>
+            <div className="absolute -z-10 w-[200vmin] h-[200vmin] -right-[90vmin] -top-[155vmin] md:-right-[70vmin] md:-top-[30vmin] lg:-translate-y-1/2 bg-[#fbf7ce] rounded-full opacity-20"></div>
             
             {/* Image illustrative */}
             <div className="relative w-full h-[300px] md:h-[300px] lg:h-[400px] z-10">
