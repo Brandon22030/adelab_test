@@ -8,10 +8,10 @@ import NewsletterForm from '@/components/sections/NewsletterForm';
 
 export default function Home() {
   return (
-    <main className="bg-white min-h-screen flex flex-col">
-      {/* <Header /> */}
-      <div className="flex-1">
-        <div className="mx-auto w-full max-w-[1800px]">
+    <main className="bg-white min-h-screen flex flex-col overflow-x-hidden">
+      <Header />
+      <div className="flex-1 w-full">
+        <div className="w-full">
           <Hero />
           <Mission />
           <Security />

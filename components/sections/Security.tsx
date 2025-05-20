@@ -26,26 +26,20 @@ const Security = () => {
       <h2 className="text-center text-lg md:text-2xl font-bold text-gray-900 px-15 md:px-6 lg:px-8 xl:px-12 2xl:mx-auto 2xl:max-w-7xl mb-5">
         Pourquoi parler de sécurité dans les <br className="hidden md:block" /> lieux de culte ?
       </h2>
-      <div className="w-full md:flex md:justify-between gap-10 md:gap-20 px-4 md:px-6 lg:px-8 xl:px-12 2xl:mx-auto 2xl:max-w-7xl">
+      <div className="w-full md:flex md:justify-between gap-6 md:gap-12 px-4 mx-auto max-w-7xl">
         <div className="text-center md:text-left mb-8 md:mb-12 md:my-auto">
-          <p className="text-black max-w-2xl mx-auto md:mx-0 mb-[2rem]">
-            Les lieux de culte musulmans, essentiels à la vie spirituelle, sont sonvent{' '}
-            <br className="hidden md:block" />
-            ouverts et donc exposés à divers risques tels que les incendies, le{' '}
-            <br className="hidden md:block" />
-            vandalisme ou les accidents.
+          <p className="text-black max-w-2xl mx-auto md:mx-0 mb-6">
+            Les lieux de culte musulmans, essentiels à la vie spirituelle, sont souvent ouverts et donc exposés à divers risques tels que les incendies, le vandalisme ou les accidents.
           </p>
           <p className="text-black max-w-2xl mx-auto md:mx-0">
-            Le Risk Management permet d&apos;anticiper, de se préparer, et de protéger{' '}
-            <br className="hidden md:block" />
-            ces lieux précieux.
+            Le Risk Management permet d&apos;anticiper, de se préparer, et de protéger ces lieux précieux.
           </p>
         </div>
 
         {/* Security Points */}
-        <div className="flex flex-col items-center space-y-4 md:mr-[15rem]">
+        <div className="flex flex-col items-center space-y-4 md:mr-0">
           {securityPoints.map((point, index) => (
-            <div key={index} className="flex items-center ml-[8rem] md:ml-0 gap-2 max-w-md w-full">
+            <div key={index} className="flex items-center justify-center md:justify-start gap-4 max-w-md w-full">
               <div className="flex-shrink-0">
                 <Image
                   src={point.icon}
